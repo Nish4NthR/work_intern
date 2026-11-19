@@ -1,0 +1,24 @@
+import pandas as pd
+
+df = pd.read_csv("data/raw/fund_master.csv")
+
+print("COLUMNS:")
+print(df.columns.tolist())
+
+print("\nFUND MASTER SHAPE:")
+print(df.shape)
+
+print("\nFUND HOUSES:")
+print(df["fund_house"].unique())
+
+print("\nCATEGORIES:")
+print(df["category"].unique())
+
+print("\nSUB CATEGORIES:")
+print(df["sub_category"].unique())
+
+print("\nRISK GRADES:")
+print(df["risk_grade"].unique())
+
+print("\nSCHEME CODES:")
+print(df["scheme_code"].head(20))
